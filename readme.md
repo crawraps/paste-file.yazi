@@ -1,6 +1,6 @@
 # paste-file.yazi
 
-[Yazi](https://github.com/sxyazi/yazi) to paste clipboard content to a file
+[Yazi](https://github.com/sxyazi/yazi) plugin to paste clipboard content strait to filesystem.
 
 https://github.com/user-attachments/assets/6b3cc09b-5495-4aaa-aaac-d19515d865a8
 
@@ -9,12 +9,11 @@ https://github.com/user-attachments/assets/6b3cc09b-5495-4aaa-aaac-d19515d865a8
 ### Linux
 
 ```sh
-git clone https://github.com/crawraps/paste-file.yazi.git ~/.config/yazi/plugins/paste-file.yazi
-```
+git clone https://github.com/crawraps/paste-file.yazi.git ~/.config/yazi/plugins/paste-file.yazi```
 
 ## Usage
 
-Add keymap with the following command:
+Create keymap with the following command:
 
 ```sh
 plugin paste-file
