@@ -2,6 +2,8 @@
 
 [Yazi](https://github.com/sxyazi/yazi) to paste clipboard content to a file
 
+https://github.com/user-attachments/assets/6b3cc09b-5495-4aaa-aaac-d19515d865a8
+
 ## Installation
 
 ### Linux
