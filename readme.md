@@ -1,6 +1,6 @@
 # paste-file.yazi
 
-[Yazi](https://github.com/sxyazi/yazi) plugin to paste clipboard content strait to filesystem.
+[Yazi](https://github.com/sxyazi/yazi) plugin to paste clipboard content straight to filesystem.
 
 https://github.com/user-attachments/assets/6b3cc09b-5495-4aaa-aaac-d19515d865a8
 
