@@ -1,6 +1,6 @@
 <div align="center"><h1>paste-file.yazi</h1></div>
 
-Yazi plugin to paste clipboard content straight to the filesystem.
+<div align="center">Yazi plugin to paste clipboard content straight to the filesystem.</div>
 
 <!-- ![showcase](https://github.com/crawraps/paste-file.yazi/assets/VIDEO_OR_IMAGE_ID) -->
 
