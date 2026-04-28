@@ -1,6 +1,6 @@
 <div align="center"><h1>paste-file.yazi</h1></div>
 
-Yazi plugin to paste clipboard content straight to the filesystem. Prompts for a filename, creates the file, and writes the current clipboard contents into it. If a file with the same name already exists, it asks for confirmation before overwriting.
+Yazi plugin to paste clipboard content straight to the filesystem.
 
 <!-- ![showcase](https://github.com/crawraps/paste-file.yazi/assets/VIDEO_OR_IMAGE_ID) -->
 
