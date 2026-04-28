@@ -7,12 +7,9 @@ end)
 function get_file_name()
   local value, event = ya.input({
     title = "File name:",
-    position = {
+    pos = {
       "bottom-center",
       w = 48,
-      h = 3,
-      x = 0,
-      y = -1,
     },
   })
 
@@ -24,7 +21,7 @@ function get_file_name()
 end
 
 function check_file_exists(file)
-  local out = Command('test'):args({ '-e', file }):output()
+  local out = Command('test'):arg({ '-e', file }):output()
 
   return out.status.code == 0
 end
@@ -45,12 +42,12 @@ function log_error(message)
     title = "Paste file",
     content = message,
     timeout = 3,
-    layer = "error"
+    level = "error"
   }
 end
 
 return {
-  entry = function(self, args)
+  entry = function(self, job)
     local cwd = get_cwd()
     local name = get_file_name()
 
@@ -63,7 +60,7 @@ return {
     local is_file_exists = check_file_exists(path)
 
     if is_file_exists then
-      if args[1] ~= "quiet" then
+      if not job.args.quiet then
         ya.notify {
           title = "Paste file",
           content = "File already exists. Choose option",
@@ -78,7 +75,7 @@ return {
       end
     end
 
-    local touch_output = Command('touch'):args({ path }):output()
+    local touch_output = Command('touch'):arg({ path }):output()
 
     if touch_output.status.code ~= 0 then
       return log_error("Failed to create file")
@@ -90,7 +87,7 @@ return {
     local ok, err = fs.write(url, clip)
 
     if not ok then
-      return err("Failed to write to file")
+      return log_error("Failed to write to file: " .. tostring(err))
     end
   end,
 }
